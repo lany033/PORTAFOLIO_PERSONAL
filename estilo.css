@@ -2,18 +2,20 @@ body{
     background-color: beige;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
+/*If you do not want to apply opacity to child elements, use RGBA color values.*/
 .navbar{
-    background-color:burlywood;
+    background-color: rgba(0,128,0, 0.1);
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
+
 .navbar_logo{
     margin: 15px;
 }
 .presentation{
     display: flex;
     justify-content: center;
+    background-color: rgba(0,128,0, 0.1);
     margin: 150px;
 }
 .presentation_des{
@@ -31,9 +33,10 @@ margin: 50px;
 .links li{
     margin: 15px;
     list-style-type: none;
+    text-decoration: none;
 }
 .footer_sty{
-    background-color: burlywood;
+    background-color: rgba(0,128,0, 0.1);
 }
 .footer_box{
     display: flex;
