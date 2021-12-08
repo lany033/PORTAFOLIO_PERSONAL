@@ -1,42 +1,74 @@
-body{
-    background-color: beige;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+/* Contenedor donde centramos todo la pagina y agregamos color */
+.container{
+    background-color: rgba(233, 8, 233, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+/* Barra superior */
+/* ------------------------------------------------------------ */
 /*If you do not want to apply opacity to child elements, use RGBA color values.*/
 .navbar{
-    background-color: rgba(0,128,0, 0.1);
+    height: 80px;
+    width: 1152px;
+    background-color: rgba(128, 0, 90, 0.1);
     display: flex;
     justify-content: space-between;   
 }
 
-.navbar_logo{
+/* Nombre en la barra*/
+.navbar_name{
     margin: 15px;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    align-items: center;
+    color:mediumvioletred; 
 }
+/* Links de la barra */
+/* ------------------------------------------------------------ */
+/* Uso de flex para ordenar links de la barra de forma separada*/
+.navbar_links{
+    display: flex;
+    justify-content: space-between;
+}
+/* Agregamos un margen de separacion entre links */
+.navbar_links li{
+    margin: 15px;
+    list-style: none;
+}
+/* Quitamos la barra debajo de los links y agregamos tipo de fuente*/
+.navbar_links a{
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* Parte donde se encuentra mi foto y una pequeña descripcion */
+/* ------------------------------------------------------------ */
+/* Caja padre */
 .presentation{
     display: flex;
     justify-content: center;
-    background-color: rgba(0,128,0, 0.1);
-    margin: 150px;
+    background-color: rgba(128, 0, 90, 0.1);
+    margin: 40px;
+    font-family: 'Architects Daughter', cursive;
+    width: 1152px;
+    height: 533px;
 }
+/* Agregamos margen a la caja de descripcion para separala de la caja de imagen */
 .presentation_des{
-margin: 50px;
+    margin: 50px;
 }
-
+.presentation_des h1{
+    color:mediumvioletred; 
+}
+/* tamaño imagen */
 .presentation img{
-    width: 400px;
+    height: 100%;
 }
 
-.links{
-    display: flex;
-    justify-content: flex-end;
-}
-.links li{
-    margin: 15px;
-    list-style-type: none;
-    text-decoration: none;
-}
+/* Pie de pagina */
 .footer_sty{
-    background-color: rgba(0,128,0, 0.1);
+    background-color: rgba(128, 0, 90, 0.1);
 }
 .footer_box{
     display: flex;
@@ -51,5 +83,7 @@ margin: 50px;
 .footer_links li{
     margin: 15px;
     list-style-type: none;
-
+}
+.footer_links a{
+    text-decoration: none;
 }
