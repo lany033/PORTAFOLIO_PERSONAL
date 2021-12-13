@@ -7,18 +7,21 @@ body{
 .navbar{
 height: 80px;
 width: 1903px;
-background-color: bisque;
+background-color: white;
 display: flex;
 flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 .bar_second{
     height: 72px;
     width: 1871px;
-    background-color: burlywood;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;    
+    align-items: center; 
+    
 }
 .ico_p{
 width: 48px;
@@ -32,6 +35,8 @@ align-items: center;
     height: 24px;
 }
 
+/* Botones de Inicio y Hoy */
+/* +++++++++++++++++++++++++ */
 .boton_inicio{
 width: 73.313px;
 height: 48px;
@@ -42,30 +47,138 @@ justify-content: center;
 align-items: center;
 
 }
+.boton_inicio a{
+    text-decoration: none;
+}
 .boton{
     color: white;
-    padding: 0px 16px;
+    width: 41.313px;
+    height: 100%;
+    
 }
 
-.boton_2{
+.boton_texto{
    height: 100%;
+   display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 .texto{
     text-align: center;
     font-weight: 700;
 }
 
-.buttom_today{
+/* boton_hoy */
+.boton_hoy{
+    width: 73.313px;
+    height: 48px;
+    
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.boton_hoy a{
+    text-decoration: none;
+    border-radius: 24px;
+    
+}
+
+.boton_hoy a:hover {
+    background-color: lightgrey;
+  }
+
+.boton_estilo{
+    color: white;
+    width: 41.313px;
+    height: 48px;
+    
+}
+
+.boton_texto_hoy{
+    height: 100%;
+    display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+     color: black;
+ }
+ 
+
+/* Barra Buscador */
+/* ++++++++++++++++++++++++++ */
+.buscador_container{
+padding-left: 8px;
+padding-right: 8px;
 
 }
-.buscador{
-
-}
-.items{
+.buscador_estilo{
+height: 48px;
+padding: 0px 0px 0px 16px;
 display: flex;
 flex-direction: row;
 }
-.items img{
+.buscador_contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; /* repasar relative */
+    height: 100%;
+}
+.buscador_contenido img {
+    height: 16px;
+    width: 16px;
+    padding: 0px 6px 0px 0px;
+}
+.buscador_contenido input{
+    height: 100%;
+    border: none;
+}
+
+/* Barra Items */
+
+.items_container{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.items_container img{
     height: 24px;
-width: 24px;
+    width: 24px;
+}
+.notificaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
 }
