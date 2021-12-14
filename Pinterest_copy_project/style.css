@@ -5,15 +5,15 @@ body{
 }
 /* Barra Superior */
 .navbar{
-height: 80px;
-width: 100%;
-background-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-top: 0;
-position: sticky;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
 }
 
 .bar_second{
@@ -23,21 +23,28 @@ position: sticky;
     display: flex;
     flex-direction: row;
     align-items: center;
-
-   /* Iconoo logo */
+    /* padding: 4px 16px 4px 16px; */
 }
+
+/* Iconoo logo */
+/* +++++++++++++++++++++++++ */
 .ico_p{
-width: 5%;
-/* height: 48px; */
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ico_p img {
     width: 24px;
     height: 24px;
-    padding: 0px 8px 0px 8px;
+    padding: 9px 9px 9px 9px;
+}
+
+.ico_p a:hover {
+    border-radius: 50%;
+    background-color: rgb(240, 239, 239);
 }
 
 /* Botones de Inicio y Hoy */
@@ -79,28 +86,24 @@ align-items: center;
 .boton_hoy{
     width: 7.5%;
     height: 48px;
-    
-    /* background-color: white; */
     display: flex;
     justify-content: center;
     align-items: center;  
+    border-radius: 24px;
 }
 .boton_hoy a{
     text-decoration: none;
     border-radius: 24px;
-    
 }
-
-.boton_hoy a:hover {
-    background-color: lightgrey;
-  }
-
+.boton_hoy:hover {
+    background-color: rgb(240, 239, 239);
+}
+/* 
 .boton_estilo{
-    color: white;
     width: 41.313px;
     height: 48px;
     
-}
+} */
 
 .boton_texto_hoy{
     height: 100%;
@@ -115,16 +118,17 @@ align-items: center;
 /* Barra Buscador */
 /* ++++++++++++++++++++++++++ */
 .buscador_container{
-padding-left: 8px;
-padding-right: 8px;
-width: 59%;
-
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 59%;
+    border-radius: 24px;
+    background-color: rgb(240, 239, 239);
 }
 .buscador_estilo{
-height: 48px;
-padding: 0px 0px 0px 16px;
-display: flex;
-flex-direction: row;
+    height: 48px;
+    padding: 0px 0px 0px 16px;
+    display: flex;
+    flex-direction: row;
 }
 .buscador_contenido{
     display: flex;
@@ -141,6 +145,10 @@ flex-direction: row;
 .buscador_contenido input{
     height: 100%;
     border: none;
+    background-color: rgb(240, 239, 239);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
 }
 
 /* Barra Items */
@@ -154,6 +162,11 @@ width: 16%;
 .items_container img{
     height: 24px;
     width: 24px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.items_container img:hover{
+    background-color: rgb(240, 239, 239);
 }
 .notificaciones{
     display: flex;
@@ -190,7 +203,9 @@ width: 16%;
     height: 24px;
     width: 24px;
 }
+
 /* Galeria de imagenes */
+/* ++++++++++++++++++++++++++++ */
 .container_gallery{
     width: 100%;
     /* margin: 1em; */
@@ -207,21 +222,22 @@ width: 16%;
     border-radius: 24px;
     margin: 0.3rem;
 }
+/* 
+.gallery img:hover{
+    background-color:lime;
+} */
 
 
 @media only screen and (min-width: 360px){
-    body{
-        /* background-color: blue; */
-    }
+    
     .navbar{
         width: 100%;
     }
 
 }
 @media only screen and (min-width: 720px){
-    body{
-        /* background-color:blueviolet; */
-    }
+    
+
     .navbar{
         width: 100%;
     }
@@ -229,9 +245,7 @@ width: 16%;
 }
 
 @media only screen and (min-width: 1024px){
-    body{
-        /* background-color:coral; */
-    }
+   
     .navbar{
         width: 100%;
     }
