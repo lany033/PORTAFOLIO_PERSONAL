@@ -1,7 +1,7 @@
 body{
     color: rgb(33, 25, 34);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
+    
 }
 /* Barra Superior */
 .navbar{
@@ -14,6 +14,7 @@ body{
     justify-content: center;
     top: 0;
     position: sticky;
+    z-index: 10;
 }
 
 .bar_second{
@@ -50,7 +51,7 @@ body{
 /* Botones de Inicio y Hoy */
 /* +++++++++++++++++++++++++ */
 .boton_inicio{
-width: 7.5%;
+width: 70px;
 height: 48px;
 border-radius: 24px;
 background-color: black;
@@ -64,7 +65,7 @@ align-items: center;
 }
 .boton{
     color: white;
-    width: 41.313px;
+   
     height: 100%;
     
 }
@@ -84,7 +85,7 @@ align-items: center;
 
 /* boton_hoy */
 .boton_hoy{
-    width: 7.5%;
+    width: 60px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -118,15 +119,15 @@ align-items: center;
 /* Barra Buscador */
 /* ++++++++++++++++++++++++++ */
 .buscador_container{
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 59%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 80%;
     border-radius: 24px;
     background-color: rgb(240, 239, 239);
 }
 .buscador_estilo{
     height: 48px;
-    padding: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 10px;
     display: flex;
     flex-direction: row;
 }
@@ -140,14 +141,14 @@ align-items: center;
 .buscador_contenido img {
     height: 16px;
     width: 16px;
-    padding: 0px 6px 0px 0px;
+    padding: 0% 1% 0% 0%;
 }
 .buscador_contenido input{
     height: 100%;
     border: none;
     background-color: rgb(240, 239, 239);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    outline: none;
 
 }
 
@@ -157,7 +158,7 @@ align-items: center;
 display: flex;
 flex-direction: row;
 align-items: center;
-width: 16%;
+width:200px ;
 }
 .items_container img{
     height: 24px;
@@ -209,29 +210,177 @@ width: 16%;
 .container_gallery{
     width: 100%;
     /* margin: 1em; */
-    
 }
 .gallery{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap;   
+    justify-content: center;   
+}
+.img_1{
+     position: relative;
+
+
 }
 
-.gallery_img{
+.img_1 img{
     width: 15rem;
     border-radius: 24px;
     margin: 0.3rem;
 }
-/* 
-.gallery img:hover{
-    background-color:lime;
+
+.img_1 img:hover{
+
+    filter: brightness(70%);
+}
+
+/* Agregar boton guardar dentro de imagenes */
+/* .position{
+    /* display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-content: flex-end;
+    
+    opacity: 1;  */
+    /* position: relative; */
+    
+/* } */ 
+
+.text_box{
+    
+    transition: .3s ease;
+    opacity: 0; 
+    position: absolute;
+    top: 9%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: (-50%, -50%);
+    text-align: center;
+ } 
+ 
+ .save{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px 16px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 24px;
+    font-weight: 700;
+} 
+/*  
+.icon_box{
+     display: flex;
+     flex-direction: row;
+     transition: .3s ease;
+    opacity: 0; 
+    position: absolute; 
+     bottom: 10%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    -ms-transform: (-50%, -50%);
 } */
 
 
+.upload_img img{
+    width: 20px;   
+    background-color: white;
+    padding: 6px;
+    opacity: 0.9;
+}
+
+
+.img_1:hover .text_box{
+    opacity: 1;}
+
+.img_1:hover .upload_img{
+    opacity: 1;}
+
+
+
+.img_1:hover .points_img{
+    opacity: 1;
+}
+
+.points_img img{
+    width: 20px;   
+    background-color: white;
+    padding: 6px;
+    opacity: 0.9;
+}  
+
+
+/* 
+
+.img_1:hover .text_box{
+    opacity: 1;
+}
+.save{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px 16px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 24px;
+    font-weight: 700;
+} */
+
+/* agregar boton upload dentro de imagen  */
+
+.upload_box{
+    
+    transition: .3s ease; 
+    opacity: 0;
+     position: absolute;
+    bottom: 10%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: (-50%, -50%);
+   
+}
+
+.img_1:hover .upload_box{
+    opacity: 1;
+}
+
+.upload_box img{
+    width: 20px;   
+    background-color: white;
+    padding: 6px;
+    opacity: 0.9;
+} 
+
+/* agregar boton puntos dentro de imagen */ 
+.points_box{
+    
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    -ms-transform: (-50%, -50%);
+   
+}
+
+.img_1:hover .points_box{
+    opacity: 1;
+}
+
+.points_box img{
+    width: 20px;   
+    background-color: white;
+    padding: 6px;
+    opacity: 0.9;
+} 
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
 @media only screen and (min-width: 360px){
     
     .navbar{
         width: 100%;
+    }
+
+    .gallery_img{
+        min-width: 25%;
     }
 
 }
